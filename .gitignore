@@ -1,0 +1,8 @@
+client_secrets.json
+*.py
+*.sh
+*.code-workspace
+__pycache__/
+*.pyc
+.env
+.DS_Store
