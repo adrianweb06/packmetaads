@@ -236,9 +236,15 @@
     .section-title .accent {
       background: var(--grad-fire); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
     }
-    .section-desc {
-      color: var(--muted); font-size: 1.05rem; line-height: 1.7;
-      max-width: 680px; margin-top: 16px;
+ .section-desc {
+      color: var(--muted); 
+      font-size: 1.05rem; 
+      line-height: 1.7;
+      max-width: 680px; 
+      margin-top: 16px;
+      margin-left: auto;   /* Centra el bloque a la izquierda */
+      margin-right: auto;  /* Centra el bloque a la derecha */
+      text-align: center;  /* Centra las líneas de texto internas */
     }
 
     .reveal {
