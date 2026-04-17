@@ -67,7 +67,6 @@
       padding: 120px 24px 80px;
     }
 
-    /* Animated background mesh */
     .hero::before {
       content: '';
       position: absolute; inset: -50%;
@@ -84,7 +83,6 @@
       100% { transform: translate(1%, -2%) scale(1.05); }
     }
 
-    /* Floating orbs */
     .orb {
       position: absolute; border-radius: 50%;
       filter: blur(70px); pointer-events: none;
@@ -114,7 +112,6 @@
       75%      { transform: translate(20px,20px); }
     }
 
-    /* Grid lines overlay */
     .hero-grid-lines {
       position: absolute; inset: 0; pointer-events: none;
       background-image:
@@ -202,7 +199,6 @@
       background: rgba(255,255,255,0.05);
     }
 
-    /* hero stats strip */
     .hero-stats {
       display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;
       margin-top: 64px; padding-top: 40px;
@@ -224,9 +220,7 @@
 
     /* ── SECTIONS BASE ─────────────────────────────── */
     section { padding: 100px 24px; }
-
     .section-inner { max-width: 1200px; margin: 0 auto; }
-
     .section-tag {
       display: inline-block;
       font-size: 0.7rem; font-weight: 700; letter-spacing: 0.18em;
@@ -247,7 +241,6 @@
       max-width: 680px; margin-top: 16px;
     }
 
-    /* Scroll reveal */
     .reveal {
       opacity: 0; transform: translateY(40px);
       transition: opacity .7s ease, transform .7s ease;
@@ -258,9 +251,7 @@
 
     /* ── VALUE PROP ────────────────────────────────── */
     .value-section { background: var(--bg2); }
-
     .value-header { text-align: center; margin-bottom: 64px; }
-
     .value-cards {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -296,9 +287,7 @@
 
     /* ── GRID PREVIEW ──────────────────────────────── */
     .grid-section { background: var(--bg); }
-
     .grid-header { text-align: center; margin-bottom: 56px; }
-
     .images-grid {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
@@ -355,7 +344,6 @@
 
     /* ── FEATURES ──────────────────────────────────── */
     .features-section { background: var(--bg2); }
-
     .features-layout {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -364,7 +352,6 @@
     @media (max-width: 800px) { .features-layout { grid-template-columns: 1fr; gap: 48px; } }
 
     .features-list { display: flex; flex-direction: column; gap: 20px; }
-
     .feature-item {
       display: flex; gap: 18px; align-items: flex-start;
       padding: 22px 24px; border-radius: 16px;
@@ -386,9 +373,7 @@
     }
     .feature-text p { color: var(--muted); font-size: 0.87rem; line-height: 1.55; }
 
-    .features-visual {
-      position: relative;
-    }
+    .features-visual { position: relative; }
     .features-mockup {
       border-radius: 24px; overflow: hidden;
       background: var(--card-bg); border: 1px solid var(--border);
@@ -550,12 +535,9 @@
 
     /* ── MOBILE OPTIMIZATIONS ─────────────────────── */
     @media (max-width: 480px) {
-      /* Nav */
       nav { padding: 14px 16px; }
       .nav-logo { font-size: 0.72rem; letter-spacing: 0.08em; }
       .nav-cta { padding: 8px 14px; font-size: 0.68rem; }
-
-      /* Hero */
       .hero { padding: 90px 18px 60px; min-height: auto; }
       .hero-badge { font-size: 0.65rem; padding: 6px 14px; }
       .hero-sub { font-size: 0.95rem; }
@@ -564,36 +546,26 @@
       .btn-secondary { justify-content: center; padding: 14px 24px; font-size: 0.85rem; }
       .hero-stats { gap: 20px; display: grid; grid-template-columns: 1fr 1fr; margin-top: 40px; padding-top: 28px; }
       .stat-num { font-size: 1.7rem; }
-
-      /* Sections */
       section { padding: 60px 16px; }
       .section-desc { font-size: 0.92rem; }
       .value-header { margin-bottom: 36px; }
       .value-cards { grid-template-columns: 1fr; gap: 14px; }
       .value-card { padding: 24px 20px; }
-
-      /* Grid */
       .grid-header { margin-bottom: 32px; }
       .images-grid { gap: 8px; }
       .grid-num { font-size: 0.58rem; padding: 2px 7px; }
-
-      /* Features */
       .features-layout { gap: 32px; }
       .feature-item { padding: 16px 16px; gap: 14px; }
       .feature-icon { width: 38px; height: 38px; font-size: 1.1rem; }
       .feature-text h4 { font-size: 0.88rem; }
       .feature-text p { font-size: 0.82rem; }
       .float-pill { display: none; }
-
-      /* Pricing */
       .pricing-card { padding: 32px 18px; border-radius: 24px; }
       .pricing-title { font-size: 1.2rem; margin-bottom: 24px; }
       .price-block { margin-bottom: 24px; }
       .pricing-items li { font-size: 0.88rem; }
       .btn-cta-big { font-size: 0.9rem; padding: 18px 24px; }
       .urgency-strip { font-size: 0.78rem; flex-direction: column; gap: 4px; text-align: center; }
-
-      /* Strip */
       .strip-section { padding: 22px 16px; }
       .strip-inner { gap: 10px 24px; }
       .strip-item { font-size: 0.72rem; }
@@ -611,7 +583,6 @@
       .float-pill { bottom: -12px; right: -8px; font-size: 0.72rem; padding: 10px 16px; }
     }
 
-    /* Touch devices: disable hover-only transforms */
     @media (hover: none) {
       .value-card:hover { transform: none; }
       .feature-item:hover { transform: none; }
@@ -619,7 +590,6 @@
       .grid-item-overlay { display: none; }
     }
 
-    /* ── SCROLLBAR ─────────────────────────────────── */
     ::-webkit-scrollbar { width: 6px; }
     ::-webkit-scrollbar-track { background: var(--bg); }
     ::-webkit-scrollbar-thumb { background: rgba(255,107,0,0.4); border-radius: 3px; }
@@ -627,13 +597,11 @@
 </head>
 <body>
 
-  <!-- NAV -->
   <nav>
     <div class="nav-logo">Mega Pack 40 Post</div>
     <a href="#precio" class="nav-cta">Ver precio →</a>
   </nav>
 
-  <!-- HERO -->
   <section class="hero">
     <div class="orb orb-1"></div>
     <div class="orb orb-2"></div>
@@ -655,7 +623,7 @@
       </p>
 
       <div class="hero-actions">
-        <a href="#precio" class="btn-primary">
+        <a href="https://wa.me/573244309292?text=Hola,%20quiero%20el%20Mega%20Pack%20de%2040%20Post%20para%20Meta%20Ads" class="btn-primary">
           🚀 ¡Quiero mi Mega Pack!
         </a>
         <a href="#preview" class="btn-secondary">
@@ -684,7 +652,6 @@
     </div>
   </section>
 
-  <!-- STRIP -->
   <div class="strip-section">
     <div class="strip-inner">
       <span class="strip-item">✦ Facebook Ads</span>
@@ -699,7 +666,6 @@
     </div>
   </div>
 
-  <!-- VALUE PROP -->
   <section class="value-section reveal">
     <div class="section-inner">
       <div class="value-header reveal">
@@ -738,7 +704,6 @@
     </div>
   </section>
 
-  <!-- GRID PREVIEW -->
   <section class="grid-section" id="preview">
     <div class="section-inner">
       <div class="grid-header reveal">
@@ -753,47 +718,46 @@
       </div>
 
       <div class="images-grid reveal">
-        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_1r9fs31r9fs31r9f.png" alt="Diseño 1" loading="lazy" /><div class="grid-num">#01</div><div class="grid-item-overlay"><span>Editable</span></div></div>
-        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_1teify1teify1tei.png" alt="Diseño 2" loading="lazy" /><div class="grid-num">#02</div><div class="grid-item-overlay"><span>Editable</span></div></div>
-        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_2fz1lz2fz1lz2fz1.png" alt="Diseño 3" loading="lazy" /><div class="grid-num">#03</div><div class="grid-item-overlay"><span>Editable</span></div></div>
-        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_3asaub3asaub3asa.png" alt="Diseño 4" loading="lazy" /><div class="grid-num">#04</div><div class="grid-item-overlay"><span>Editable</span></div></div>
-        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_48aw7748aw7748aw.png" alt="Diseño 5" loading="lazy" /><div class="grid-num">#05</div><div class="grid-item-overlay"><span>Editable</span></div></div>
-        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_4kv37f4kv37f4kv3.png" alt="Diseño 6" loading="lazy" /><div class="grid-num">#06</div><div class="grid-item-overlay"><span>Editable</span></div></div>
-        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_4w5r8w4w5r8w4w5r.png" alt="Diseño 7" loading="lazy" /><div class="grid-num">#07</div><div class="grid-item-overlay"><span>Editable</span></div></div>
-        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_597lje597lje597l.png" alt="Diseño 8" loading="lazy" /><div class="grid-num">#08</div><div class="grid-item-overlay"><span>Editable</span></div></div>
-        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_6mc32r6mc32r6mc3.png" alt="Diseño 9" loading="lazy" /><div class="grid-num">#09</div><div class="grid-item-overlay"><span>Editable</span></div></div>
-        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_6xcty26xcty26xct.png" alt="Diseño 10" loading="lazy" /><div class="grid-num">#10</div><div class="grid-item-overlay"><span>Editable</span></div></div>
-        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_7bbwyk7bbwyk7bbw.png" alt="Diseño 11" loading="lazy" /><div class="grid-num">#11</div><div class="grid-item-overlay"><span>Editable</span></div></div>
-        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_803ygu803ygu803y.png" alt="Diseño 12" loading="lazy" /><div class="grid-num">#12</div><div class="grid-item-overlay"><span>Editable</span></div></div>
-        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_b7ie9hb7ie9hb7ie.png" alt="Diseño 13" loading="lazy" /><div class="grid-num">#13</div><div class="grid-item-overlay"><span>Editable</span></div></div>
-        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_coww5hcoww5hcoww.png" alt="Diseño 14" loading="lazy" /><div class="grid-num">#14</div><div class="grid-item-overlay"><span>Editable</span></div></div>
-        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_csp7n4csp7n4csp7.png" alt="Diseño 15" loading="lazy" /><div class="grid-num">#15</div><div class="grid-item-overlay"><span>Editable</span></div></div>
-        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_d7tbvjd7tbvjd7tb.png" alt="Diseño 16" loading="lazy" /><div class="grid-num">#16</div><div class="grid-item-overlay"><span>Editable</span></div></div>
-        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_e90jote90jote90j.png" alt="Diseño 17" loading="lazy" /><div class="grid-num">#17</div><div class="grid-item-overlay"><span>Editable</span></div></div>
-        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_eqs01eeqs01eeqs0.png" alt="Diseño 18" loading="lazy" /><div class="grid-num">#18</div><div class="grid-item-overlay"><span>Editable</span></div></div>
-        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_hczzk1hczzk1hczz.png" alt="Diseño 19" loading="lazy" /><div class="grid-num">#19</div><div class="grid-item-overlay"><span>Editable</span></div></div>
-        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_hlsrnthlsrnthlsr.png" alt="Diseño 20" loading="lazy" /><div class="grid-num">#20</div><div class="grid-item-overlay"><span>Editable</span></div></div>
-        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_l2gdn0l2gdn0l2gd.png" alt="Diseño 21" loading="lazy" /><div class="grid-num">#21</div><div class="grid-item-overlay"><span>Editable</span></div></div>
-        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_mi9f89mi9f89mi9f.png" alt="Diseño 22" loading="lazy" /><div class="grid-num">#22</div><div class="grid-item-overlay"><span>Editable</span></div></div>
-        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_mptr3smptr3smptr.png" alt="Diseño 23" loading="lazy" /><div class="grid-num">#23</div><div class="grid-item-overlay"><span>Editable</span></div></div>
-        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_mu2j6hmu2j6hmu2j.png" alt="Diseño 24" loading="lazy" /><div class="grid-num">#24</div><div class="grid-item-overlay"><span>Editable</span></div></div>
-        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_n3c026n3c026n3c0.png" alt="Diseño 25" loading="lazy" /><div class="grid-num">#25</div><div class="grid-item-overlay"><span>Editable</span></div></div>
-        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_o9oqwuo9oqwuo9oq.png" alt="Diseño 26" loading="lazy" /><div class="grid-num">#26</div><div class="grid-item-overlay"><span>Editable</span></div></div>
-        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_qwhm7hqwhm7hqwhm.png" alt="Diseño 27" loading="lazy" /><div class="grid-num">#27</div><div class="grid-item-overlay"><span>Editable</span></div></div>
-        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_r8rpzor8rpzor8rp.png" alt="Diseño 28" loading="lazy" /><div class="grid-num">#28</div><div class="grid-item-overlay"><span>Editable</span></div></div>
-        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_rdpp93rdpp93rdpp.png" alt="Diseño 29" loading="lazy" /><div class="grid-num">#29</div><div class="grid-item-overlay"><span>Editable</span></div></div>
-        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_rxujenrxujenrxuj.png" alt="Diseño 30" loading="lazy" /><div class="grid-num">#30</div><div class="grid-item-overlay"><span>Editable</span></div></div>
-        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_sofbc7sofbc7sofb.png" alt="Diseño 31" loading="lazy" /><div class="grid-num">#31</div><div class="grid-item-overlay"><span>Editable</span></div></div>
-        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_tpmzpttpmzpttpmz.png" alt="Diseño 32" loading="lazy" /><div class="grid-num">#32</div><div class="grid-item-overlay"><span>Editable</span></div></div>
-        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_u0iirbu0iirbu0ii.png" alt="Diseño 33" loading="lazy" /><div class="grid-num">#33</div><div class="grid-item-overlay"><span>Editable</span></div></div>
-        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_v7zwxgv7zwxgv7zw.png" alt="Diseño 34" loading="lazy" /><div class="grid-num">#34</div><div class="grid-item-overlay"><span>Editable</span></div></div>
-        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_w9gg6dw9gg6dw9gg.png" alt="Diseño 35" loading="lazy" /><div class="grid-num">#35</div><div class="grid-item-overlay"><span>Editable</span></div></div>
-        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_wm34vowm34vowm34.png" alt="Diseño 36" loading="lazy" /><div class="grid-num">#36</div><div class="grid-item-overlay"><span>Editable</span></div></div>
-        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_xrg5g4xrg5g4xrg5.png" alt="Diseño 37" loading="lazy" /><div class="grid-num">#37</div><div class="grid-item-overlay"><span>Editable</span></div></div>
-        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_z3pmw2z3pmw2z3pm.png" alt="Diseño 38" loading="lazy" /><div class="grid-num">#38</div><div class="grid-item-overlay"><span>Editable</span></div></div>
-        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_z8ouv5z8ouv5z8ou.png" alt="Diseño 39" loading="lazy" /><div class="grid-num">#39</div><div class="grid-item-overlay"><span>Editable</span></div></div>
-        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_z96bn3z96bn3z96b.png" alt="Diseño 40" loading="lazy" /><div class="grid-num">#40</div><div class="grid-item-overlay"><span>Editable</span></div></div>
-        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_zflt7izflt7izflt.png" alt="Diseño 41" loading="lazy" /><div class="grid-num">#41</div><div class="grid-item-overlay"><span>Editable</span></div></div>
+        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_1r9fs31r9fs31r9f.png" alt="Diseño 1" loading="eager" fetchpriority="high" /><div class="grid-num">#01</div><div class="grid-item-overlay"><span>Editable</span></div></div>
+        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_1teify1teify1tei.png" alt="Diseño 2" loading="eager" fetchpriority="high" /><div class="grid-num">#02</div><div class="grid-item-overlay"><span>Editable</span></div></div>
+        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_2fz1lz2fz1lz2fz1.png" alt="Diseño 3" loading="eager" fetchpriority="high" /><div class="grid-num">#03</div><div class="grid-item-overlay"><span>Editable</span></div></div>
+        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_3asaub3asaub3asa.png" alt="Diseño 4" loading="eager" fetchpriority="high" /><div class="grid-num">#04</div><div class="grid-item-overlay"><span>Editable</span></div></div>
+        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_48aw7748aw7748aw.png" alt="Diseño 5" loading="lazy" decoding="async" /><div class="grid-num">#05</div><div class="grid-item-overlay"><span>Editable</span></div></div>
+        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_4kv37f4kv37f4kv3.png" alt="Diseño 6" loading="lazy" decoding="async" /><div class="grid-num">#06</div><div class="grid-item-overlay"><span>Editable</span></div></div>
+        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_4w5r8w4w5r8w4w5r.png" alt="Diseño 7" loading="lazy" decoding="async" /><div class="grid-num">#07</div><div class="grid-item-overlay"><span>Editable</span></div></div>
+        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_597lje597lje597l.png" alt="Diseño 8" loading="lazy" decoding="async" /><div class="grid-num">#08</div><div class="grid-item-overlay"><span>Editable</span></div></div>
+        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_6mc32r6mc32r6mc3.png" alt="Diseño 9" loading="lazy" decoding="async" /><div class="grid-num">#09</div><div class="grid-item-overlay"><span>Editable</span></div></div>
+        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_6xcty26xcty26xct.png" alt="Diseño 10" loading="lazy" decoding="async" /><div class="grid-num">#10</div><div class="grid-item-overlay"><span>Editable</span></div></div>
+        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_7bbwyk7bbwyk7bbw.png" alt="Diseño 11" loading="lazy" decoding="async" /><div class="grid-num">#11</div><div class="grid-item-overlay"><span>Editable</span></div></div>
+        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_803ygu803ygu803y.png" alt="Diseño 12" loading="lazy" decoding="async" /><div class="grid-num">#12</div><div class="grid-item-overlay"><span>Editable</span></div></div>
+        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_b7ie9hb7ie9hb7ie.png" alt="Diseño 13" loading="lazy" decoding="async" /><div class="grid-num">#13</div><div class="grid-item-overlay"><span>Editable</span></div></div>
+        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_coww5hcoww5hcoww.png" alt="Diseño 14" loading="lazy" decoding="async" /><div class="grid-num">#14</div><div class="grid-item-overlay"><span>Editable</span></div></div>
+        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_csp7n4csp7n4csp7.png" alt="Diseño 15" loading="lazy" decoding="async" /><div class="grid-num">#15</div><div class="grid-item-overlay"><span>Editable</span></div></div>
+        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_d7tbvjd7tbvjd7tb.png" alt="Diseño 16" loading="lazy" decoding="async" /><div class="grid-num">#16</div><div class="grid-item-overlay"><span>Editable</span></div></div>
+        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_e90jote90jote90j.png" alt="Diseño 17" loading="lazy" decoding="async" /><div class="grid-num">#17</div><div class="grid-item-overlay"><span>Editable</span></div></div>
+        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_eqs01eeqs01eeqs0.png" alt="Diseño 18" loading="lazy" decoding="async" /><div class="grid-num">#18</div><div class="grid-item-overlay"><span>Editable</span></div></div>
+        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_hczzk1hczzk1hczz.png" alt="Diseño 19" loading="lazy" decoding="async" /><div class="grid-num">#19</div><div class="grid-item-overlay"><span>Editable</span></div></div>
+        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_hlsrnthlsrnthlsr.png" alt="Diseño 20" loading="lazy" decoding="async" /><div class="grid-num">#20</div><div class="grid-item-overlay"><span>Editable</span></div></div>
+        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_l2gdn0l2gdn0l2gd.png" alt="Diseño 21" loading="lazy" decoding="async" /><div class="grid-num">#21</div><div class="grid-item-overlay"><span>Editable</span></div></div>
+        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_mi9f89mi9f89mi9f.png" alt="Diseño 22" loading="lazy" decoding="async" /><div class="grid-num">#22</div><div class="grid-item-overlay"><span>Editable</span></div></div>
+        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_mptr3smptr3smptr.png" alt="Diseño 23" loading="lazy" decoding="async" /><div class="grid-num">#23</div><div class="grid-item-overlay"><span>Editable</span></div></div>
+        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_mu2j6hmu2j6hmu2j.png" alt="Diseño 24" loading="lazy" decoding="async" /><div class="grid-num">#24</div><div class="grid-item-overlay"><span>Editable</span></div></div>
+        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_n3c026n3c026n3c0.png" alt="Diseño 25" loading="lazy" decoding="async" /><div class="grid-num">#25</div><div class="grid-item-overlay"><span>Editable</span></div></div>
+        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_o9oqwuo9oqwuo9oq.png" alt="Diseño 26" loading="lazy" decoding="async" /><div class="grid-num">#26</div><div class="grid-item-overlay"><span>Editable</span></div></div>
+        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_qwhm7hqwhm7hqwhm.png" alt="Diseño 27" loading="lazy" decoding="async" /><div class="grid-num">#27</div><div class="grid-item-overlay"><span>Editable</span></div></div>
+        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_r8rpzor8rpzor8rp.png" alt="Diseño 28" loading="lazy" decoding="async" /><div class="grid-num">#28</div><div class="grid-item-overlay"><span>Editable</span></div></div>
+        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_rdpp93rdpp93rdpp.png" alt="Diseño 29" loading="lazy" decoding="async" /><div class="grid-num">#29</div><div class="grid-item-overlay"><span>Editable</span></div></div>
+        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_rxujenrxujenrxuj.png" alt="Diseño 30" loading="lazy" decoding="async" /><div class="grid-num">#30</div><div class="grid-item-overlay"><span>Editable</span></div></div>
+        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_sofbc7sofbc7sofb.png" alt="Diseño 31" loading="lazy" decoding="async" /><div class="grid-num">#31</div><div class="grid-item-overlay"><span>Editable</span></div></div>
+        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_tpmzpttpmzpttpmz.png" alt="Diseño 32" loading="lazy" decoding="async" /><div class="grid-num">#32</div><div class="grid-item-overlay"><span>Editable</span></div></div>
+        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_u0iirbu0iirbu0ii.png" alt="Diseño 33" loading="lazy" decoding="async" /><div class="grid-num">#33</div><div class="grid-item-overlay"><span>Editable</span></div></div>
+        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_v7zwxgv7zwxgv7zw.png" alt="Diseño 34" loading="lazy" decoding="async" /><div class="grid-num">#34</div><div class="grid-item-overlay"><span>Editable</span></div></div>
+        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_w9gg6dw9gg6dw9gg.png" alt="Diseño 35" loading="lazy" decoding="async" /><div class="grid-num">#35</div><div class="grid-item-overlay"><span>Editable</span></div></div>
+        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_wm34vowm34vowm34.png" alt="Diseño 36" loading="lazy" decoding="async" /><div class="grid-num">#36</div><div class="grid-item-overlay"><span>Editable</span></div></div>
+        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_xrg5g4xrg5g4xrg5.png" alt="Diseño 37" loading="lazy" decoding="async" /><div class="grid-num">#37</div><div class="grid-item-overlay"><span>Editable</span></div></div>
+        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_z3pmw2z3pmw2z3pm.png" alt="Diseño 38" loading="lazy" decoding="async" /><div class="grid-num">#38</div><div class="grid-item-overlay"><span>Editable</span></div></div>
+        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_z8ouv5z8ouv5z8ou.png" alt="Diseño 39" loading="lazy" decoding="async" /><div class="grid-num">#39</div><div class="grid-item-overlay"><span>Editable</span></div></div>
+        <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_z96bn3z96bn3z96b.png" alt="Diseño 40" loading="lazy" decoding="async" /><div class="grid-num">#40</div><div class="grid-item-overlay"><span>Editable</span></div></div>
       </div>
 
       <p class="grid-note reveal">
@@ -802,7 +766,6 @@
     </div>
   </section>
 
-  <!-- FEATURES -->
   <section class="features-section">
     <div class="section-inner">
       <div class="features-layout">
@@ -860,7 +823,7 @@
               <div class="mg-item"><img src="imagenes para arreglar/Gemini_Generated_Image_sofbc7sofbc7sofb.png" alt="" loading="lazy" /></div>
               <div class="mg-item"><img src="imagenes para arreglar/Gemini_Generated_Image_z96bn3z96bn3z96b.png" alt="" loading="lazy" /></div>
             </div>
-            <div class="mockup-badge">Misma estética · 41 diseños</div>
+            <div class="mockup-badge">Misma estética · 40 diseños</div>
           </div>
           <div class="float-pill">¡Tu logo aquí! ✦</div>
         </div>
@@ -868,7 +831,6 @@
     </div>
   </section>
 
-  <!-- PRICING -->
   <section class="pricing-section" id="precio">
     <div class="section-inner">
       <div class="pricing-card reveal">
@@ -881,13 +843,13 @@
         <div class="price-block">
           <div class="price-label">Precio especial</div>
           <div class="price-amount">
-            <span class="price-currency">$</span>150.000
+            <span class="price-currency">$</span>300.000
           </div>
-          <div class="price-per">COP · <strong>Solo $3.659 por diseño</strong></div>
+          <div class="price-per">COP · <strong>Solo $7.500 por diseño</strong></div>
         </div>
 
         <ul class="pricing-items">
-          <li>41 diseños profesionales para Meta Ads</li>
+          <li>40 diseños profesionales para Meta Ads</li>
           <li>Estética 100% coherente y unificada</li>
           <li>Plantillas editables con tu logo y producto</li>
           <li>Formatos optimizados para Facebook e Instagram</li>
@@ -895,7 +857,7 @@
           <li>Entrega inmediata por WhatsApp o correo</li>
         </ul>
 
-        <a href="#" class="btn-cta-big">
+        <a href="https://wa.me/573244309292?text=Hola,%20quiero%20el%20Mega%20Pack%20de%2040%20Post%20para%20Meta%20Ads" class="btn-cta-big">
           🚀 ¡Quiero mi Mega Pack!
         </a>
 
@@ -906,14 +868,12 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
     <div class="footer-logo">Mega Pack 40 Post · Meta Ads</div>
     <p class="footer-text">Plantillas digitales profesionales para impulsar tu negocio en redes sociales.</p>
   </footer>
 
   <script>
-    // Scroll reveal
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(e => {
         if (e.isIntersecting) {
@@ -925,7 +885,6 @@
 
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-    // Stagger grid items
     document.querySelectorAll('.grid-item').forEach((el, i) => {
       el.style.transitionDelay = `${(i % 10) * 40}ms`;
     });
