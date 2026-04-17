@@ -236,15 +236,15 @@
     .section-title .accent {
       background: var(--grad-fire); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
     }
- .section-desc {
+    .section-desc {
       color: var(--muted); 
       font-size: 1.05rem; 
       line-height: 1.7;
       max-width: 680px; 
       margin-top: 16px;
-      margin-left: auto;   /* Centra el bloque a la izquierda */
-      margin-right: auto;  /* Centra el bloque a la derecha */
-      text-align: center;  /* Centra las líneas de texto internas */
+      margin-left: auto;   /* Centra el bloque */
+      margin-right: auto;  /* Centra el bloque */
+      text-align: center;  /* Centra el texto */
     }
 
     .reveal {
@@ -305,7 +305,7 @@
     .grid-item {
       position: relative; overflow: hidden;
       border-radius: 12px;
-      aspect-ratio: 1;
+      aspect-ratio: 1 / 1; /* Reserva espacio para evitar saltos */
       background: var(--card-bg);
       border: 1px solid var(--border);
       cursor: pointer;
@@ -728,6 +728,7 @@
         <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_1teify1teify1tei.png" alt="Diseño 2" loading="eager" fetchpriority="high" /><div class="grid-num">#02</div><div class="grid-item-overlay"><span>Editable</span></div></div>
         <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_2fz1lz2fz1lz2fz1.png" alt="Diseño 3" loading="eager" fetchpriority="high" /><div class="grid-num">#03</div><div class="grid-item-overlay"><span>Editable</span></div></div>
         <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_3asaub3asaub3asa.png" alt="Diseño 4" loading="eager" fetchpriority="high" /><div class="grid-num">#04</div><div class="grid-item-overlay"><span>Editable</span></div></div>
+        
         <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_48aw7748aw7748aw.png" alt="Diseño 5" loading="lazy" decoding="async" /><div class="grid-num">#05</div><div class="grid-item-overlay"><span>Editable</span></div></div>
         <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_4kv37f4kv37f4kv3.png" alt="Diseño 6" loading="lazy" decoding="async" /><div class="grid-num">#06</div><div class="grid-item-overlay"><span>Editable</span></div></div>
         <div class="grid-item"><img src="imagenes para arreglar/Gemini_Generated_Image_4w5r8w4w5r8w4w5r.png" alt="Diseño 7" loading="lazy" decoding="async" /><div class="grid-num">#07</div><div class="grid-item-overlay"><span>Editable</span></div></div>
